@@ -10,3 +10,9 @@ function compute()
     resultElement.innerText = interest;
 }
         
+
+function updateRate() {
+   var rateValue = document.getElementById("rate-value");
+   var rateElem = document.getElementById("rate");
+   rateValue.innerText = rateElem.value;
+}
