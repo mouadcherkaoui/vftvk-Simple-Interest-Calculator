@@ -20,7 +20,7 @@ function compute()
         var temporary = (new Date()).getFullYear();
         temporary = temporary + parseInt(years);
         
-        applyResult(resultElem, principal, interest, rate, years);
+        applyResult(resultElem, principal, interest, rate, temporary);
     }
 }
 
@@ -29,7 +29,7 @@ function applyResult(elem, principal, interest, rate, years) {
     elem.innerHtml += " <u> <li>If you deposit " + principal + "</li>"
     elem.innerHtml += " <li>at an interest rate of " + rate + "%.</li>"
     elem.innerHtml += "<li>You will receive an amount of " + interest + ",</li>"
-    elem.innerHTML += "<li>in the year " + tempY + "</li></ul><\div>";
+    elem.innerHTML += "<li>in the year " + years + "</li></ul><\div>";
 }
 
 // update rate label function
