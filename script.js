@@ -25,11 +25,12 @@ function compute()
 }
 
 function applyResult(elem, principal, interest, rate, years) {
-    elem.innerHtml= "<div class='result'>"
-    elem.innerHtml += " <u> <li>If you deposit " + principal + "</li>"
-    elem.innerHtml += " <li>at an interest rate of " + rate + "%.</li>"
-    elem.innerHtml += "<li>You will receive an amount of " + interest + ",</li>"
-    elem.innerHTML += "<li>in the year " + years + "</li></ul><\div>";
+    var innerHtml= "<div class='result'>"
+    innerHtml += " <u> <li>If you deposit " + principal + "</li>"
+    innerHtml += " <li>at an interest rate of " + rate + "%.</li>"
+    innerHtml += "<li>You will receive an amount of " + interest + ",</li>"
+    innerHTML += "<li>in the year " + years + "</li></ul><\div>";
+    elem.innerHTML = innerHtml;
 }
 
 // update rate label function
