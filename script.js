@@ -20,11 +20,11 @@ function compute()
         var temporary = (new Date()).getFullYear();
         temporary = temporary + parseInt(years);
         
-        applyResult(resultElem, principal, rate, years);
+        applyResult(resultElem, principal, interest, rate, years);
     }
 }
 
-function applyResult(elem, principal, rate, years) {
+function applyResult(elem, principal, interest, rate, years) {
     elem.innerHtml= "<div class='result'>"
     elem.innerHtml += " <u> <li>If you deposit " + principal + "</li>"
     elem.innerHtml += " <li>at an interest rate of " + rate + "%.</li>"
